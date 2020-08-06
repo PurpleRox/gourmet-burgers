@@ -131,7 +131,7 @@
     <div class=" container-fluid bg-dark">
       <div class="row text-center">
         <div class=" col-md-7 text-light font-italic">
-          <p>Sign up for exclusisve offers...</p>
+          <p>Sign up for exclusive offers...</p>
         </div>
         <div class=" col-md-5">
           <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal">Sign up here</button>
@@ -143,13 +143,42 @@
     <div class="modal fade" id="modal">
       <div class=" modal-dialog">
         <div class="modal-content">
-          <div class=" modal-header"></div>
-          <div class="modal-body"></div>
-          <div class="modal-footer"></div>
+          <div class=" modal-header">
+            <h5 class=" modal-title">Sign up for exclusive offers!</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="nameInput">Your Name</label>
+                <input type="text" class=" form-control" id="nameInput" placeholder="Enter your Name">
+              </div>
+              <div class="form-group">
+                <label for="emailInput">Your Email</label>
+                <input type="email" class=" form-control" id="emailInput" placeholder="Enter your Email">
+              </div>
+              <div class="form-group">
+                <label for="address">Your Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter your Address"></textarea>
+              </div>
+            
+          </div>
+          <div class="modal-footer justify-content-between">
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="emailCheck" value="option1" />
+              <label class="form-check-label" for="#emailCheck"> Contact by Email?</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" id="postCheck" value="option1" />
+              <label class="form-check-label" for="#postCheck"> Contact by Post?</label>
+            </div>
+            <button type="button" class=" btn btn-primary">Submit</button>
+          </div>
+        </form>
         </div>
       </div>
     </div>
-
 
 
     <!-- Optional JavaScript -->
