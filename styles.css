@@ -2,3 +2,17 @@
   width: 140px;
   height: 140px;
 }
+
+main {
+  border: 1px dashed;
+  grid-template-columns: repeat(3, 300px);
+  display: grid;
+  grid-gap: 10px 5px;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.item{
+  background: pink ;
+}
